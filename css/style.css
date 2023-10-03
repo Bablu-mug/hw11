@@ -1,0 +1,207 @@
+/* common css start */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --primaryfont:'Poppins', sans-serif;
+    --secondaryfont: 'PT Sans', sans-serif;
+    --primarycolor: #353535;
+    --secondarycolor:#FC0;
+}
+body{
+    font-family: var(--primaryfont);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+h1 h2 h3 h4 h5 h6 ul ol p span{
+    margin: 0;
+    padding: 0;  
+}
+.bttn{
+    border-radius: 20px;
+    background: var(--secondarycolor);
+
+    color: #FFF;
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 180%; 
+    padding: 16px 40px;
+    display: inline-block;
+}
+.bttn span{
+    margin-left: 11px;
+}
+.bttn.bttnextra{
+    background-color: transparent;
+    color: #353535;
+    border: 1px solid black;
+}
+/* common css end */
+/* nav css start */
+nav{
+    background: #FFF;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10); 
+    padding: 16px !important; 
+}
+
+#customnav ul li a{
+    text-transform: uppercase;
+    color: var(--primarycolor);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 200%;
+    padding: 18px 22px 5px;
+    display: inline-block;
+    position: relative;
+}
+#customnav ul li a::before{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--primarycolor);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+#customnav ul li:hover a::before{
+    width: 100%;
+}
+nav .navbar-toggler{
+    border: none;
+}
+nav .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* nav ess end */
+
+/* hero css start */
+#hero {
+    margin-bottom: 60px;
+}
+#hero .hero-image img{
+    width: 100%;
+}
+#hero .hero-cnt h4{
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+    font-size: 24px;
+    font-weight: 400;
+}
+#hero .hero-cnt h4 span{
+    margin-left: 38px;
+    color: var(--secondarycolor);
+}
+#hero .hero-cnt h1{
+    color: var(--primarycolor);
+    font-family: var(--secondaryfont);
+    font-size: 64px;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+#hero .hero-cnt p{
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 180%;
+    padding-bottom: 45px;
+}
+#hero .hero-cnt .bttnextra{
+    margin-left: 40px;
+}
+#hero .hero-cnt .icon{
+    display: inline-block;
+    padding-top: 33px;
+    color: #353535;
+font-family: var(--primaryfont);
+font-size: 22px;
+font-weight: 500;
+line-height: 180%; /* 39.6px */
+}
+#hero .hero-cnt .icon h4{
+ cursor:default;
+ margin-right: 10px;
+}
+#hero .hero-cnt .icon span{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background-color:#F4F3F3;
+  /* padding: 10px; */
+  font-size: 20px;
+  margin-left: 15px;
+  display: inline-block;
+}
+#hero .hero-cnt .icon span:hover{
+    background-color: var(--secondarycolor);
+}
+
+#hero .hero-cnt .mouseicon{
+    position: absolute;
+    bottom: -30px;
+    right:-35px;
+
+}
+#hero .hero-image .icon{   
+     display: inline-block;
+    padding-top: 33px;
+    color: #353535;
+font-family: var(--primaryfont);
+font-size: 22px;
+font-weight: 500;
+line-height: 180%; /* 39.6px */}
+#hero .hero-image .icon h4{
+    cursor:default;
+    margin-right: 10px;
+}
+#hero .hero-image .icon span{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:#F4F3F3;
+    /* padding: 10px; */
+    font-size: 20px;
+    margin-left: 15px;
+    display: inline-block;
+}
+#hero .hero-image .icon span:hover{
+    background-color: var(--secondarycolor);
+
+}
+
+
+
+/* hero css end */
+/* about css start */
+#about{
+    background: linear-gradient(95deg, #FC0 -21.46%, #FFF5CB 112.13%);
+}
+#about .about-cnt h4{
+    color: var(--primarycolor);
+    font-family: var(--secondaryfont);
+    font-size: 50px;
+    font-weight: 700;
+}
+#about .about-cnt p{
+    color: var(--primarycolor);
+    font-family: var(--primaryfont);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 190%;
+    padding-top: 26px;
+    padding-bottom: 45px;
+}
+/* about css end */
